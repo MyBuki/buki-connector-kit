@@ -1,6 +1,6 @@
 # Submission note
 
-One page at most. Plain sentences. Copy this file to `SUBMISSION_NOTE.md`, fill it in, commit it to your repository, and paste it into the submission email.
+One page at most. Plain sentences. Copy this file to `SUBMISSION_NOTE.md`, fill it in, commit it to your repository, and paste it into your submission on the Proof project page.
 
 ## What I pulled, and what I left out
 

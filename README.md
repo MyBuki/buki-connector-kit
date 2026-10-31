@@ -274,9 +274,9 @@ Sage Accounting (the small business product, formerly Sage Business Cloud Accoun
 
 ## Day 3 and submitting
 
-**By the end of day 3**, email a one-page plan to vivek@mybuki.ai: what you will pull from Sage, how it maps onto the canonical types, how it will stay in sync, and the questions you have. A page is plenty. We reply within a working day.
+**By the end of day 3**, post a one-page plan on the Proof project page: what you will pull from Sage, how it maps onto the canonical types, how it will stay in sync, and the questions you have. A page is plenty. We reply within a working day.
 
-**To submit:** push your work to a private repository of your own (clone this kit, create an empty private repository on GitHub, point `origin` at it, push), add the GitHub user `vivekschandrasekar-beep` as a collaborator, and email vivek@mybuki.ai the repository link, the video link and the note (there is a template in `SUBMISSION_NOTE_TEMPLATE.md`). Do not open a public fork; other candidates would see your work.
+**To submit:** push your work to a private repository of your own (clone this kit, create an empty private repository on GitHub, point `origin` at it, push), add the GitHub user `vivekschandrasekar-beep` as a collaborator, and post the repository link, the video link and the note (there is a template in `SUBMISSION_NOTE_TEMPLATE.md`) on the Proof project page. Do not open a public fork; other candidates would see your work.
 
 ## Who to ask
 

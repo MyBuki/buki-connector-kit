@@ -1,0 +1,108 @@
+{
+  "accounts": [
+    { "id": "sage:acc-1200", "source": "sage", "sourceId": "acc-1200", "code": "1200", "name": "Operating account", "type": "asset", "sourceUpdatedAt": "2026-01-05T09:00:00Z" },
+    { "id": "sage:acc-1210", "source": "sage", "sourceId": "acc-1210", "code": "1210", "name": "Reserve account", "type": "asset", "sourceUpdatedAt": "2026-01-05T09:00:00Z" },
+    { "id": "sage:acc-1100", "source": "sage", "sourceId": "acc-1100", "code": "1100", "name": "Trade debtors", "type": "asset", "sourceUpdatedAt": "2026-01-05T09:00:00Z" },
+    { "id": "sage:acc-2100", "source": "sage", "sourceId": "acc-2100", "code": "2100", "name": "Trade creditors", "type": "liability", "sourceUpdatedAt": "2026-01-05T09:00:00Z" },
+    { "id": "sage:acc-3000", "source": "sage", "sourceId": "acc-3000", "code": "3000", "name": "Share capital", "type": "equity", "sourceUpdatedAt": "2026-01-05T09:00:00Z" },
+    { "id": "sage:acc-4000", "source": "sage", "sourceId": "acc-4000", "code": "4000", "name": "Sales", "type": "income", "sourceUpdatedAt": "2026-01-05T09:00:00Z" },
+    { "id": "sage:acc-5000", "source": "sage", "sourceId": "acc-5000", "code": "5000", "name": "Contractors", "type": "expense", "sourceUpdatedAt": "2026-01-05T09:00:00Z" },
+    { "id": "sage:acc-7100", "source": "sage", "sourceId": "acc-7100", "code": "7100", "name": "Rent", "type": "expense", "sourceUpdatedAt": "2026-01-05T09:00:00Z" },
+    { "id": "sage:acc-7500", "source": "sage", "sourceId": "acc-7500", "code": "7500", "name": "Software subscriptions", "type": "expense", "sourceUpdatedAt": "2026-01-05T09:00:00Z" }
+  ],
+  "parties": [
+    { "id": "sage:con-2001", "source": "sage", "sourceId": "con-2001", "name": "Northgate Analytics", "kind": "customer", "email": "accounts@northgate.example", "sourceUpdatedAt": "2026-03-11T15:20:00Z" },
+    { "id": "sage:con-2002", "source": "sage", "sourceId": "con-2002", "name": "Pinecrest Health", "kind": "customer", "email": "payables@pinecrest.example", "sourceUpdatedAt": "2026-05-02T10:45:00Z" },
+    { "id": "sage:con-2003", "source": "sage", "sourceId": "con-2003", "name": "Tolliver & Reed LLP", "kind": "customer", "sourceUpdatedAt": "2026-08-19T13:05:00Z" },
+    { "id": "sage:con-2004", "source": "sage", "sourceId": "con-2004", "name": "Ovelo Cloud", "kind": "supplier", "email": "billing@ovelo.example", "sourceUpdatedAt": "2026-02-24T08:30:00Z" },
+    { "id": "sage:con-2005", "source": "sage", "sourceId": "con-2005", "name": "Bluestem Workspace", "kind": "supplier", "email": "invoices@bluestem.example", "sourceUpdatedAt": "2026-01-12T11:00:00Z" }
+  ],
+  "invoices": [
+    {
+      "id": "sage:si-3001", "source": "sage", "sourceId": "si-3001", "kind": "sales", "partyId": "sage:con-2001",
+      "number": "SI-3001", "date": "2026-09-04", "dueDate": "2026-10-04", "status": "paid",
+      "currency": "USD", "total": 18000, "outstanding": 0,
+      "lines": [
+        { "description": "Platform licence, Q3 2026", "accountId": "sage:acc-4000", "net": 18000 }
+      ],
+      "sourceUpdatedAt": "2026-10-06T16:40:00Z"
+    },
+    {
+      "id": "sage:si-3002", "source": "sage", "sourceId": "si-3002", "kind": "sales", "partyId": "sage:con-2002",
+      "number": "SI-3002", "date": "2026-09-15", "dueDate": "2026-10-15", "status": "unpaid",
+      "currency": "USD", "total": 9500, "outstanding": 9500,
+      "lines": [
+        { "description": "Implementation, September", "accountId": "sage:acc-4000", "net": 9500 }
+      ],
+      "sourceUpdatedAt": "2026-09-15T09:12:00Z"
+    },
+    {
+      "id": "sage:si-3003", "source": "sage", "sourceId": "si-3003", "kind": "sales", "partyId": "sage:con-2003",
+      "number": "SI-3003", "date": "2026-09-22", "dueDate": "2026-10-22", "status": "part_paid",
+      "currency": "USD", "total": 6000, "outstanding": 2500,
+      "lines": [
+        { "description": "Reporting module, annual", "accountId": "sage:acc-4000", "net": 6000 }
+      ],
+      "sourceUpdatedAt": "2026-10-23T14:02:00Z"
+    },
+    {
+      "id": "sage:si-3004", "source": "sage", "sourceId": "si-3004", "kind": "sales", "partyId": "sage:con-2002",
+      "number": "SI-3004", "date": "2026-10-06", "dueDate": "2026-11-05", "status": "draft",
+      "currency": "USD", "total": 7500, "outstanding": 7500,
+      "lines": [
+        { "description": "Implementation, October", "accountId": "sage:acc-4000", "net": 7500 }
+      ],
+      "sourceUpdatedAt": "2026-10-06T17:55:00Z"
+    },
+    {
+      "id": "sage:si-3005", "source": "sage", "sourceId": "si-3005", "kind": "sales", "partyId": "sage:con-2001",
+      "number": "SI-3005", "date": "2026-10-13", "dueDate": "2026-11-12", "status": "void",
+      "currency": "USD", "total": 4000, "outstanding": 0,
+      "lines": [
+        { "description": "Training day, raised in error", "accountId": "sage:acc-4000", "net": 4000 }
+      ],
+      "sourceUpdatedAt": "2026-10-14T08:20:00Z"
+    },
+    {
+      "id": "sage:si-3006", "source": "sage", "sourceId": "si-3006", "kind": "sales", "partyId": "sage:con-2001",
+      "number": "SI-3006", "date": "2026-10-20", "status": "unpaid",
+      "currency": "USD", "total": 12000, "outstanding": 12000,
+      "lines": [
+        { "description": "Platform licence, Q4 2026", "accountId": "sage:acc-4000", "net": 12000 }
+      ],
+      "sourceUpdatedAt": "2026-10-20T10:30:00Z"
+    },
+    {
+      "id": "sage:pi-3101", "source": "sage", "sourceId": "pi-3101", "kind": "purchase", "partyId": "sage:con-2005",
+      "number": "BW-0926", "date": "2026-09-01", "dueDate": "2026-09-30", "status": "paid",
+      "currency": "USD", "total": 8800, "outstanding": 0,
+      "lines": [
+        { "description": "Office rent, September 2026", "accountId": "sage:acc-7100", "net": 8500 },
+        { "description": "Meeting room booking add-on", "accountId": "sage:acc-7500", "net": 300 }
+      ],
+      "sourceUpdatedAt": "2026-09-01T12:00:00Z"
+    },
+    {
+      "id": "sage:pi-3102", "source": "sage", "sourceId": "pi-3102", "kind": "purchase", "partyId": "sage:con-2004",
+      "number": "OV-44817", "date": "2026-10-03", "dueDate": "2026-11-02", "status": "unpaid",
+      "currency": "USD", "total": 2350, "outstanding": 2350,
+      "lines": [
+        { "description": "Cloud hosting, September usage", "accountId": "sage:acc-7500", "net": 1900 },
+        { "description": "Monitoring, 12 seats", "accountId": "sage:acc-7500", "net": 450 }
+      ],
+      "sourceUpdatedAt": "2026-10-03T07:45:00Z"
+    }
+  ],
+  "bankTransactions": [
+    { "id": "sage:bt-5001", "source": "sage", "sourceId": "bt-5001", "bankAccountId": "sage:acc-1200", "date": "2026-09-01", "amount": -8800, "currency": "USD", "description": "Bluestem Workspace, invoice BW-0926", "partyId": "sage:con-2005", "sourceUpdatedAt": "2026-09-01T12:05:00Z" },
+    { "id": "sage:bt-5002", "source": "sage", "sourceId": "bt-5002", "bankAccountId": "sage:acc-1200", "date": "2026-09-12", "amount": -4500, "currency": "USD", "description": "Contractor, design sprint", "accountId": "sage:acc-5000", "sourceUpdatedAt": "2026-09-12T16:10:00Z" },
+    { "id": "sage:bt-5003", "source": "sage", "sourceId": "bt-5003", "bankAccountId": "sage:acc-1200", "date": "2026-09-19", "amount": -180, "currency": "USD", "description": "Ledgerline subscription, card", "accountId": "sage:acc-7500", "sourceUpdatedAt": "2026-09-19T03:00:00Z" },
+    { "id": "sage:bt-5004", "source": "sage", "sourceId": "bt-5004", "bankAccountId": "sage:acc-1200", "date": "2026-09-30", "amount": 60000, "currency": "USD", "description": "Transfer from reserve account", "sourceUpdatedAt": "2026-09-30T09:00:00Z" },
+    { "id": "sage:bt-5005", "source": "sage", "sourceId": "bt-5005", "bankAccountId": "sage:acc-1200", "date": "2026-10-06", "amount": 18000, "currency": "USD", "description": "Northgate Analytics, SI-3001", "partyId": "sage:con-2001", "sourceUpdatedAt": "2026-10-06T16:40:00Z" },
+    { "id": "sage:bt-5006", "source": "sage", "sourceId": "bt-5006", "bankAccountId": "sage:acc-1200", "date": "2026-10-23", "amount": 3500, "currency": "USD", "description": "Tolliver & Reed LLP, part payment SI-3003", "partyId": "sage:con-2003", "sourceUpdatedAt": "2026-10-23T14:02:00Z" },
+    { "id": "sage:bt-5007", "source": "sage", "sourceId": "bt-5007", "bankAccountId": "sage:acc-1200", "date": "2026-10-28", "amount": -4500, "currency": "USD", "description": "Contractor, design sprint", "accountId": "sage:acc-5000", "sourceUpdatedAt": "2026-10-28T16:10:00Z" },
+    { "id": "sage:bt-5008", "source": "sage", "sourceId": "bt-5008", "bankAccountId": "sage:acc-1210", "date": "2026-09-08", "amount": 250000, "currency": "USD", "description": "Deposit from investment account", "sourceUpdatedAt": "2026-09-08T11:30:00Z" },
+    { "id": "sage:bt-5009", "source": "sage", "sourceId": "bt-5009", "bankAccountId": "sage:acc-1210", "date": "2026-09-30", "amount": -60000, "currency": "USD", "description": "Transfer to operating account", "sourceUpdatedAt": "2026-09-30T09:00:00Z" },
+    { "id": "sage:bt-5010", "source": "sage", "sourceId": "bt-5010", "bankAccountId": "sage:acc-1210", "date": "2026-10-26", "amount": 95, "currency": "USD", "description": "Interest, October", "sourceUpdatedAt": "2026-10-26T02:00:00Z" }
+  ]
+}

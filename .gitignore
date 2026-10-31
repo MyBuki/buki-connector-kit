@@ -1,0 +1,19 @@
+# dependencies
+node_modules
+
+# the local canonical store, written by every sync, and any tokens a connector keeps
+.data/
+
+# secrets live here and only here
+.env
+.env.local
+.env.*.local
+
+# editor and OS files
+.DS_Store
+*.log
+.vscode
+.idea
+
+# typescript incremental state
+*.tsbuildinfo

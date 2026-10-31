@@ -1,0 +1,26 @@
+{
+  "name": "buki-connector-kit",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "mock": "node mock/bamboohr/server.mjs",
+    "health": "tsx src/cli.ts health",
+    "sync": "tsx src/cli.ts sync",
+    "cron": "tsx src/cli.ts cron",
+    "show": "tsx src/cli.ts show",
+    "ask": "tsx src/cli.ts ask",
+    "check": "tsx src/cli.ts check",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "tsx": "^4",
+    "typescript": "^5",
+    "vitest": "^5"
+  }
+}
